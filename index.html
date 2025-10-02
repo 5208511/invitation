@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date Invitation</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Oooh+Baby&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Envelope Page -->
+  <section id="envelope-cover" class="fade-in show">
+    <div class="envelope-wrapper">
+      <img src="assets/images/envelope.png" alt="Envelope" class="envelope-img">
+      <h1 id="envelope-header">Ni Hao Fine Shyt 💌</h1>
+      <button id="open-envelope">Open</button>
+    </div>
+  </section>
+
+  <!-- Date Selection Page -->
+  <section id="date-selection" class="hidden fade-in">
+    <header>
+      <h1 class="color-cycle">hey Oli, choose a date!</h1>
+    </header>
+    <main class="container">
+      <div class="card2" data-choice="DIY">
+        <img src="assets/images/photo1.jfif" alt="Casual Date">
+        <h2>Dinner at Home</h2>
+        <p>Rice + Pork Crackling + Fry some bokchoy? <br><br> Location: Yours or Mine</p>
+        <button class="pick-btn">Pick this one</button>
+      </div>
+      <div class="card2" data-choice="Casual and Comforting">
+        <img src="assets/images/photo2.jfif" alt="Fancy Date">
+        <h2>Casual and Comforting</h2>
+        <p>Some cold chicken and some Molly Tea? <br><br> Location: City</p>
+        <button class="pick-btn">Pick this one</button>
+      </div>
+      <div class="card2" data-choice="Fancy and New">
+        <img src="assets/images/photo3.jfif" alt="Adventure Date">
+        <h2>Fancy and Romantic</h2>
+        <p>Some place new? I'll find a place I've saved to try something new <br><br> Location: TBD</p>
+        <button class="pick-btn">Pick this one</button>
+      </div>
+    </main>
+  </section>
+
+  <!-- Confirmation Page -->
+  <section id="confirmation-screen" class="hidden fade-in">
+    <div class="confirmation-wrapper">
+      <h2>Your girl has been notified of your choice and will let you know details shortly. Can’t wait for our date! 💕</h2>
+      <button id="back-to-envelope">Back to Envelope</button>
+    </div>
+  </section>
+
+  <!-- Hidden Form for Formspree -->
+  <form id="pick-form" action="https://formspree.io/f/myznjjod" method="POST" style="display:none;">
+    <input type="hidden" name="choice" id="choice-field">
+  </form>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
